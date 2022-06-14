@@ -139,7 +139,7 @@ _TeamCity*
 *.dotCover
 
 # AxoCover is a Code Coverage Tool
-.axoCover/*
+.axoCover/**
 !.axoCover/settings.json
 
 # Coverlet is a free, cross platform Code Coverage Tool
@@ -168,11 +168,11 @@ AutoTest.Net/
 
 # DocProject is a documentation generator add-in
 DocProject/buildhelp/
-DocProject/Help/*.HxT
-DocProject/Help/*.HxC
-DocProject/Help/*.hhc
-DocProject/Help/*.hhk
-DocProject/Help/*.hhp
+DocProject/Help/**.HxT
+DocProject/Help/**.HxC
+DocProject/Help/**.hhc
+DocProject/Help/**.hhk
+DocProject/Help/**.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 
@@ -197,7 +197,7 @@ PublishScripts/
 # NuGet Symbol Packages
 *.snupkg
 # The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
+**/[Pp]ackages/**
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
@@ -295,11 +295,11 @@ node_modules/
 *.vbw
 
 # Visual Studio LightSwitch build output
-**/*.HTMLClient/GeneratedArtifacts
-**/*.DesktopClient/GeneratedArtifacts
-**/*.DesktopClient/ModelManifest.xml
-**/*.Server/GeneratedArtifacts
-**/*.Server/ModelManifest.xml
+**/**.HTMLClient/GeneratedArtifacts
+**/**.DesktopClient/GeneratedArtifacts
+**/**.DesktopClient/ModelManifest.xml
+**/**.Server/GeneratedArtifacts
+**/**.Server/ModelManifest.xml
 _Pvt_Extensions
 
 # Paket dependency manager
@@ -317,7 +317,7 @@ __pycache__/
 *.pyc
 
 # Cake - Uncomment if you are using it
-# tools/**
+# tools/***
 # !tools/packages.config
 
 # Tabs Studio
