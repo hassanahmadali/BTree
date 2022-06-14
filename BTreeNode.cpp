@@ -165,7 +165,7 @@ BTreeType_t BTreeNode::getPredecessor(size_t ind)
 }
 BTreeType_t BTreeNode::getSuccessor(size_t ind)
 {
-	BTreeNode *cur = child_[ind + 1];
+	BTreeNode *cur = child_[ind + 1]; /*c => Current Node*/
 	while (!cur->isLeaf_)
 		cur = cur->child_[0];
 	return cur->keys_[0];
