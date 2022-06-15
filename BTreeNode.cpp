@@ -114,13 +114,13 @@ void BTreeNode::remove(BTreeType_t x)
 	{
 		if (isLeaf_)
 		{
-			std::cout << "The key " << x << " is does not exist in the tree\n";
+			std::cout << "The key " << x << " is not existed in this Btree\n";
 			return;
 		}
-		bool flag = (ind == n_);
+		bool temp = (ind == n_);
 		if (child_[ind]->n_ < t_)
 			fill(ind);
-		if (flag && ind > n_)
+		if (temp && ind > n_)
 			child_[ind - 1]->remove(x);
 		else
 			child_[ind]->remove(x);

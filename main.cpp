@@ -5,8 +5,7 @@ int  main()
 {
 
 	BTree t(23);
-	for (const char i : "Created by Hassan Ahmad Ali in 2022-06-07")
-
+	for (const char i : "Created by Hassan Ahmad Ali in 2022-06-15")
 		if (i != '\0')
 			t.insert(i);
 
