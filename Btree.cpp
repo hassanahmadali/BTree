@@ -57,13 +57,13 @@ void BTree::remove(BTreeType_t k)
 	root->remove(k);
 	if (root->n_ == 0)
 	{
-		BTreeNode *tmp = root;
+		BTreeNode *dump = root;
 		if (root->isLeaf_)
-			root = NULL;
+			root = nullptr;
 		else
 			root = root->child_[0];
 
-		delete tmp;
+		delete dump;
 	}
 	return;
 }

@@ -1,10 +1,9 @@
 #ifndef BTREENODE_H
 #define BTREENODE_H
 #pragma once
+using BTreeType_t = char;
 #include <iostream>
 using std::cout;
-using BTreeType_t = char;
-
 class BTreeNode
 {
 protected:
@@ -40,7 +39,6 @@ public:
 	 * \param x a new Element to be inserted
 	 */
 	void insert(BTreeType_t x);
-
 	/**
 	 * \brief Split the child 'node' of the Currnet node which must be full
 	 * \param ind is the index of 'node'
@@ -51,7 +49,6 @@ public:
 	 * \brief traverse across the nodes in the current tree
 	 */
 	void traverse() const;
-
 	/**
 	 * \brief Search for an Element
 	 * \param x the Element Searched for
@@ -71,13 +68,11 @@ public:
 	void remove(BTreeType_t x);
 	void removeLeafNode(size_t ind);
 	void removeNonLeafNode(size_t ind);
-
 	/**
 	 * \brief get the Predecessor of the keys[ind]
 	 * \param ind the index of the key to get the predecessor to
 	 */
 	BTreeType_t getPredecessor(size_t ind);
-
 	/**
 	 * \brief get the Successor of the keys[ind]
 	 * \param ind the index of the key to get the Successor to
@@ -98,12 +93,10 @@ public:
 	 * \brief A function to replace the element child[ind] with child[ind-1]
 	 */
 	void borrowFromNext(size_t ind);
-	
 	/**
 	 * \brief A function to merge child[ind] with child[ind+1] and remove child[ind+1]
 	 */
 	void merge(const size_t ind);
-
 	friend class BTree;
 };
 
